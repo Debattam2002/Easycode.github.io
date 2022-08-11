@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Easy code</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary" >
+    <div class="container-fluid">
+      <img src="http://cdn.onlinewebfonts.com/svg/img_323164.svg" width="25px" height="25px">
+      <a class="navbar-brand mx-3" href="#"><b>EASY-CODE</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/project.html">my project</a></li>
+              <li><a class="dropdown-item" href="/guess.html">guess number game</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/writeabout.html">Write about us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Log In</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignupModal">Sign Up</button>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </nav>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">Login <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Login to E-MARKET</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignupModalLabel">Create an account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://wallup.net/wp-content/uploads/2018/03/17/540089-programmers-AutoHotkey-code-programming-laptop-ThinkPad.jpg"
+          height="450px" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://realprogramming.com/wp-content/uploads/2021/02/online-coding-classes.jpg?is-pending-load=1"
+          height="450px" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.X62IATqOOUeFAVfU6PerMgHaDm&pid=Api&P=0" height="450px"
+          class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+ 
+  <main>
+  
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light"><b>LEARN CODING</b></h1>
+          <p class="lead text-muted">Some open source best coding learning platforms are here. so hurry !!! and learn from experts</p>
+          
+        </div>
+      </div>
+    </section>
+  
+    <div class="album py-5 bg-light">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm my-4">
+             <img src ="https://wallpapercave.com/wp/wp4521294.jpg">
+  
+              <div class="card-body">
+                <p class="card-text"><b>This is a C programing free learning platform</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://youtu.be/ZSPZob_1TOk">CLICK HERE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm my-4">
+             <img src ="http://authorstream.s3.amazonaws.com/content/2469478_635655207875240000.jpg">
+              <div class="card-body">
+                <p class="card-text"><b>This is a C++ programing free learning platform</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://youtu.be/yGB9jhsEsr8">CLICK HERE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm my-4">
+              <img src ="https://miro.medium.com/max/4000/0*bpt3hdn8q6Xw4MOZ.png">
+  
+              <div class="card-body">
+                <p class="card-text"><b>This is a JAVA programing free learning platform</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://youtu.be/rV_3Lewxx6o">CLICK HERE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm my-4">
+              <img src ="https://365datascience.com/resources/blog/2017-11-Programming-in-900-words-min.png">
+              <div class="card-body">
+                <p class="card-text"><b>This is a PYTHON programing free learning platform</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://youtu.be/gfDE2a7MKjA">CLICK HERE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm my-4">
+             <img src ="https://i.ytimg.com/vi/3qD_IDxsHXo/maxresdefault.jpg">
+              <div class="card-body">
+                <p class="card-text"><b>This is a HTML  free learning platform</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://youtu.be/BsDoLVMnmZs">CLICK HERE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm my-4">
+             <img src="https://i.pinimg.com/736x/2f/ba/37/2fba376411668ae48277aa75b57fa1f5.jpg">
+              <div class="card-body">
+                <p class="card-text"><b>This is a CSS free learning platform</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://youtu.be/Edsxf_NBFrw">CLICK HERE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm my-4">
+              <img src ="https://images.ctfassets.net/yr4qj72ki4ky/legacyBlogPost77Thumbnail/cd4783ad7b35efc4367166a570a9952e/bigstock-Real-Java-Script-Code-Developi-217215433.jpg?q=72">
+              <div class="card-body">
+                <p class="card-text"><b>This is a JAVASCRIPT programing free learning platform</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://youtu.be/hKB-YGF14SY">CLICK HERE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm my-4">
+              <img src ="https://www.clariontech.com/hubfs/BootstrapProgramming.png">
+              <div class="card-body">
+                <p class="card-text"><b>This is a Bootstrap free learning platform</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://youtu.be/vpAJ0s5S2t0">CLICK HERE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm my-4">
+              <img  src ="https://ng.smartthink.co.uk/wp-content/uploads/2017/03/PHP.jpg">
+              <div class="card-body">
+                <p class="card-text"><b>This is a PHP and MYSQL free learning platform</b></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://youtu.be/1SnPKhCdlsU">CLICK HERE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </main>
+  
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1"> © copyright - Debattam Banerjee 2022-23</p>
+      
+    </div>
+  </footer>
+  
+  
+      <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
+        
+    
+  
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
